@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Everything</title>
+    <link rel="stylesheet"  href="donald.css">
+    <style>
+    </style>
+    <script src="donald.js"></script>
+    <!-- IE9 needs this createElement -->
+    <script>document.createElement("myHero")</script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<p>The samp element represents sample output from a computer program:</p>
+
+<samp>
+    demo.example.com login: Apr 12 09:10:17
+    Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+</samp>
+
+<!-- this won't be shown -->
+<code>
+    var x = 5;
+    var y = 6;
+    document.getElementById("demo").innerHTML = x + y;
+</code>
+
+<!-- this will be shown -->
+<pre>
+<code>
+var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</code>
+</pre>
+
+<p>Einstein wrote: <var>E</var> = <var>m</var>
+    <var>c</var><sup>2</sup>.</p>
+
+<p>The kbd element represents keyboard input:</p>
+<p><kbd>File | Open...</kbd></p>
+
+
+<!--[if IE 9]>
+    .... Conditional Comments: sasome HTML here ....
+<![endif]-->
+
+<!-- inline styles -->
+<h2 style="background-color:blue;color:white">
+    Background-color set by using blue
+</h2>
+
+<h2 style="background-color:rgb(255,0,0)">
+    Background-color set by using rgb(255,0,0)
+</h2>
+
+<h2 style="background-color:rgb(90,90,90);color:white">
+    Background-color set by using rgb(90,90,90)
+</h2>
+
+<h2 style="background-color:#FF0000">
+    Background-color set by using #FF0000
+</h2>
+
+<h2 style="background-color:#808080;color:white">
+    Background-color set by using #808080
+</h2>
+
+<!-- override the style sheet and default -->
+<h1 style="color:darkgrey;">
+    This is a Blue Heading
+</h1>
+
+<p id="p01">I am different</p>
+
+<p class="error">I am different</p>
+
+<a href="html_images.asp" target="_blank">HTML Images</a>
+
+<p>Locked in a frame? <a href="http://www.w3schools.com/html/" target="_top">Click here!</a></p>
+
+<p>Locked in a frame? <a href="http://www.w3schools.com/html/" target="_self">Click here!</a></p>
+
+<p>Locked in a frame? <a href="http://www.w3schools.com/html/" target="_parent">Click here!</a></p>
+
+<a href="default.asp">
+  <img src="smiley.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+
+<h2 id="tips">Useful Tips Section</h2>
+<a href="#tips">Visit the Useful Tips Section</a>
+<a href="html_tips.html#tips">Visit the Useful Tips Section</a>
+
+
+<!-- this won't be impacted by the style sheet -->
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+<!-- this will be impacted by the style sheet -->
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus"href="venus.htm">
+</map>
+
+
+
+<table style="width:100%">
+  <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+      </tr>
+  <tr>
+        <td>Jill</td>
+        <td>Smith</td> 
+        <td>50</td>
+      </tr>
+  <tr>
+        <td>Eve</td>
+        <td>Jackson</td> 
+        <td>94</td>
+      </tr>
+</table>
+
+<img id="img1" src="smiley.gif" onclick="when_i_click();"/>
+
+<myHero>My Hero Element</myHero>
+
+
+</body>
+</html>

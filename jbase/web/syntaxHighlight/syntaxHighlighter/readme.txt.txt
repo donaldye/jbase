@@ -1,0 +1,1 @@
+view-source:http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/bash.html

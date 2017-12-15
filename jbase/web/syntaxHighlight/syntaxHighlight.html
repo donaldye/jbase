@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-83229-12']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script src="syntaxHighlighter/main.js"></script>
+</head>
+<body class='no_sponsor'>
+<div id='title'>
+    <h1>
+        <a href='/SyntaxHighlighter'>SyntaxHighlighter</a>
+        <span id='version'>3.0.83</span>
+    </h1>
+    <a href='https://github.com/alexgorbatchev/SyntaxHighlighter' id='forkme'>Fork Me On GitHub</a>
+    <div id='whatsnew'>
+        <a href='/SyntaxHighlighter/whatsnew.html'>whats new?</a>
+    </div>
+    <div id='blurb'>
+        <em>SyntaxHighlighter is an open source Java Script client side code syntax highlighter.</em>
+    </div>
+    <div id='meta'>
+        <a href='/SyntaxHighlighter/donate.html'>donate</a>
+        <a href='/SyntaxHighlighter/download'>download</a>
+        <a href='/SyntaxHighlighter/manual/installation.html'>installation</a>
+        <a href='/SyntaxHighlighter/manual/api/autoloader.html'>autoloader</a>
+        <a href='/SyntaxHighlighter/manual/configuration'>configuration</a>
+        <a href='http://twitter.com/syntaxhighlight'>@syntaxhighlight</a>
+    </div>
+    <h2>Bash Example</h2>
+</div>
+<div id='content'>
+      <pre class='brush:bash'>
+      #!/bin/bash
+      X=3
+      Y=4
+      empty_string=""
+      if [ $X -lt $Y ]	# is $X less than $Y ?
+      then
+      	echo "\$X=${X}, which is smaller than \$Y=${Y}"
+      fi
+
+      if [ -n "$empty_string" ]; then
+      	echo "empty string is non_empty"
+      fi
+
+      if [ -e "${HOME}/.fvwmrc" ]; then 			# test to see if ~/.fvwmrc exists
+      	echo "you have a .fvwmrc file"
+      	if [ -L "${HOME}/.fvwmrc" ]; then 		# is it a symlink ?
+      		echo "it's a symbolic link"
+      	elif [ -f "${HOME}/.fvwmrc" ]; then 	# is it a regular file ?
+      		echo "it's a regular file"
+      	fi
+      else
+      	echo "you have no .fvwmrc file"
+      fi
+      </pre>
+    <table><thead><tr><th>Brush name</th><th>Brush aliases</th><th>File name</th></tr></thead><tbody><tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/actionscript3.html'>ActionScript3</a></td><td style='text-align: left;'>as3, actionscript3</td><td style='text-align: left;'>shBrushAS3.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/bash.html'>Bash/shell</a></td><td style='text-align: left;'>bash, shell</td><td style='text-align: left;'>shBrushBash.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/coldfusion.html'>ColdFusion</a></td><td style='text-align: left;'>cf, coldfusion</td><td style='text-align: left;'>shBrushColdFusion.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/csharp.html'>C#</a></td><td style='text-align: left;'>c-sharp, csharp</td><td style='text-align: left;'>shBrushCSharp.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/cpp.html'>C++</a></td><td style='text-align: left;'>cpp, c</td><td style='text-align: left;'>shBrushCpp.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/css.html'>CSS</a></td><td style='text-align: left;'>css</td><td style='text-align: left;'>shBrushCss.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/delphi.html'>Delphi</a></td><td style='text-align: left;'>delphi, pas, pascal</td><td style='text-align: left;'>shBrushDelphi.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/diff.html'>Diff</a></td><td style='text-align: left;'>diff, patch</td><td style='text-align: left;'>shBrushDiff.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/erlang.html'>Erlang</a></td><td style='text-align: left;'>erl, erlang</td><td style='text-align: left;'>shBrushErlang.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/groovy.html'>Groovy</a></td><td style='text-align: left;'>groovy</td><td style='text-align: left;'>shBrushGroovy.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/javascript.html'>JavaScript</a></td><td style='text-align: left;'>js, jscript, javascript</td><td style='text-align: left;'>shBrushJScript.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/java.html'>Java</a></td><td style='text-align: left;'>java</td><td style='text-align: left;'>shBrushJava.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/javafx.html'>JavaFX</a></td><td style='text-align: left;'>jfx, javafx</td><td style='text-align: left;'>shBrushJavaFX.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/perl.html'>Perl</a></td><td style='text-align: left;'>perl, pl</td><td style='text-align: left;'>shBrushPerl.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/php.html'>PHP</a></td><td style='text-align: left;'>php</td><td style='text-align: left;'>shBrushPhp.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/plain.html'>Plain Text</a></td><td style='text-align: left;'>plain, text</td><td style='text-align: left;'>shBrushPlain.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/powershell.html'>PowerShell</a></td><td style='text-align: left;'>ps, powershell</td><td style='text-align: left;'>shBrushPowerShell.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/python.html'>Python</a></td><td style='text-align: left;'>py, python</td><td style='text-align: left;'>shBrushPython.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/ruby.html'>Ruby</a></td><td style='text-align: left;'>rails, ror, ruby</td><td style='text-align: left;'>shBrushRuby.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/scala.html'>Scala</a></td><td style='text-align: left;'>scala</td><td style='text-align: left;'>shBrushScala.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/sql.html'>SQL</a></td><td style='text-align: left;'>sql</td><td style='text-align: left;'>shBrushSql.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/vb.html'>Visual Basic</a></td><td style='text-align: left;'>vb, vbnet</td><td style='text-align: left;'>shBrushVb.js</td></tr>
+    <tr><td style='text-align: left;'><a href='/SyntaxHighlighter/manual/brushes/xml.html'>XML</a></td><td style='text-align: left;'>xml, xhtml, xslt, html, xhtml</td><td style='text-align: left;'>shBrushXml.js</td></tr>
+    </tbody></table>
+</div>
+</body>
+<link rel="stylesheet"  href="syntaxHighlighter/main.css" type="text/css">
+<link rel="stylesheet"  href="syntaxHighlighter/shCore.css" type="text/css">
+<link rel="stylesheet"  href="syntaxHighlighter/shThemeDefault.css" type="text/css">
+<script src='syntaxHighlighter/shCore.js' type='text/javascript'></script>
+<script src='syntaxHighlighter/shAutoloader.js' type='text/javascript'></script>
+<script src='syntaxHighlighter/shBrushXml.js' type='text/javascript'></script>
+<script src='syntaxHighlighter/shBrushJScript.js' type='text/javascript'></script>
+<script src='syntaxHighlighter/shBrushCss.js' type='text/javascript'></script>
+<script src='syntaxHighlighter/main.js' type='text/javascript'></script>
+</html>

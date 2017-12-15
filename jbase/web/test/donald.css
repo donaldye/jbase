@@ -1,0 +1,76 @@
+/*
+the css file must not contain any XML tags including <style></style> and event comment tags -->
+use these to remove invisible space
+    $new = htmlentities($new, null, 'utf-8');
+    $new = str_replace("&nbsp;", "", $new);
+    $new = html_entity_decode($new);
+*/
+
+body {background-color: powderblue;}
+
+/* to support in older browsers that do not support HTML5 semantic elements
+    semantic elements are better for search engines to identify the correct web page content
+*/
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+/*
+p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 1px solid powderblue;
+    padding: 30px;
+    margin: 50px;
+}
+*/
+
+#p01 {
+    color:blue;
+}
+p.error{
+    color:red;
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+img{
+    width:100%;
+}
+table, th, td{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+
+/* new element */
+myHero {
+    display: block;
+    background-color: #dddddd;
+    padding: 50px;
+    font-size: 30px;
+}
+
